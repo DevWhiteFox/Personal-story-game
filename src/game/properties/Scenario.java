@@ -1,9 +1,9 @@
 package game.properties;
 
-public class Event {
+public class Scenario {
     private Presentation presentation;
 
-    public Event(Presentation presentation){
+    public Scenario(Presentation presentation){
         this.presentation = presentation;
     }
 
@@ -12,6 +12,6 @@ public class Event {
     }
 
     public String getDescription() {
-        return presentation.getName();
+        return presentation.getDescription();
     }
 }
