@@ -1,46 +1,17 @@
 package game.properties;
 
-import game.event.Option;
-
-import java.util.ArrayList;
-
-import java.util.Map;
-
 public class Event {
-    private String nameEvent;
-    private String nameImage;
-    private ArrayList<Option> options;
-    private Map<Character, Integer> consequences;
+    private Presentation presentation;
+
+    public Event(Presentation presentation){
+        this.presentation = presentation;
+    }
 
     public String getNameEvent() {
-        return nameEvent;
+        return presentation.getName();
     }
 
-    public void setNameEvent(String nameEvent) {
-        this.nameEvent = nameEvent;
-    }
-
-    public String getNameImage() {
-        return nameImage;
-    }
-
-    public void setNameImage(String nameImage) {
-        this.nameImage = nameImage;
-    }
-
-    public ArrayList<Option> getOptions() {
-        return options;
-    }
-
-    public void setOptions(ArrayList<Option> options) {
-        this.options = options;
-    }
-
-    public Map<Character, Integer> getConsequences() {
-        return consequences;
-    }
-
-    public void setConsequences(Map<Character, Integer> consequences) {
-        this.consequences = consequences;
+    public String getDescription() {
+        return presentation.getName();
     }
 }

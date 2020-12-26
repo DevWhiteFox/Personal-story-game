@@ -1,19 +1,17 @@
 package game.properties;
 
 public class Option {
-    private String nameOption;
-    private String description;
+    private Presentation presentation;
 
-    public Option(String nameOption, String description){
-        this.nameOption = nameOption;
-        this.description = description;
+    public Option(Presentation presentation){
+        this.presentation = presentation;
     }
 
     public String getNameOption() {
-        return nameOption;
+        return presentation.getName();
     }
 
     public String getDescription() {
-        return description;
+        return presentation.getDescription();
     }
 }

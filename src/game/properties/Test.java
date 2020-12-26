@@ -1,18 +1,15 @@
 package game.properties;
 
-import game.event.Option;
-
-import java.util.ArrayList;
-
 public class Test {
 
     public static void main(String[] args) {
-        Event event = new Event();
-        event.setNameEvent("Combattimento");
+        Presentation optionP = new Presentation("Attaca", "Attaca il <nemicox>");
+        Presentation eventP = new Presentation("Goblin", "Goblin in una grotta");
+        Option option = new Option(optionP);
+        Event event = new Event(eventP);
+        System.out.println(option.getNameOption());
+        System.out.println(option.getDescription());
         System.out.println(event.getNameEvent());
-        event.setOptions(new ArrayList<>());
-        event.getOptions().add(0,new Option("Combatti","Devi combattere contro <nemicox>"));
-        System.out.println(event.getOptions().get(0).getNameOption());
-        System.out.println(event.getOptions().get(0).getDescription());
+        System.out.println(event.getDescription());
     }
 }
