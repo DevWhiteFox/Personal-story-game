@@ -11,7 +11,7 @@ public class Option {
         return presentation.getName();
     }
 
-    public String getDescription() {
+    public Description getDescription() {
         return presentation.getDescription();
     }
 }
