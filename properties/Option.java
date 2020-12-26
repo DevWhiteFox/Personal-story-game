@@ -1,4 +1,4 @@
-package game.event;
+package game.properties;
 
 public class Option {
     private String nameOption;
