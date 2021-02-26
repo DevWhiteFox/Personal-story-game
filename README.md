@@ -1,2 +1,2 @@
-# Journey-of-the-adventurer
-Adventurer game
+# Personal-story-game
+Custom story game
